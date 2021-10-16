@@ -1,7 +1,7 @@
 {
   "name": "js-interacion-web",
   "version": "1.0.0",
-  "description": "Sport Media is a web controller by javascript and html & css",
+  "description": "Sport Media is web that aims to controlled by  javascript. Also contains CSS and HTML styles",
   "main": "index.js",
   "scripts": {
     "deploy:gh-pages": "gh-pages -d ."
