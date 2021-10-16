@@ -4,7 +4,7 @@
   "description": "Sport Media is a web controller by javascript and html & css",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy:gh-pages": "gh-pages -d ."
   },
   "keywords": [
     "Html",
