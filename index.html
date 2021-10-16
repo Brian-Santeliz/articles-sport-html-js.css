@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- Etiqueta "doctype", informa al navegador que versión de HTML se esta usando y como debe interpretar las etiquetas -->
+<html lang="es">
+  <!-- Etiqueta "html", representa la raiz de un documento HTML. -->
+  <head>
+    <!-- 
+      Etiquetas meta, usada para describir la web, autor, etc y
+      suministrar información codificada a navegadores y motores de búsqueda
+     -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sport Media información sobre deportes" />
+    <meta name="author" content="Manuel El Eysami" />
+    <!-- Etiqueta "link",  especifica la relación entre el documento actual y un recurso externo -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Etiqueta "title", funciona para darle título a una página -->
+    <title>Sport Media | Conoce los últimos articulos</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--  Etiqueta "body", representa el contenido de un documento HTML. -->
+      <header class="header-principal">
+        <!-- Etiqueta "header", se utiliza para definir una sección de encabezado -->
+        <h1>Sport Media | Última infomación sobre Deportes</h1>
+        <div>
+          <nav>
+            <!-- Nav, es utilizada como sección para proporcionar enlaces de navegación, -->
+            <a href="#section-1">Champions</a>
+            <a href="#section-2">Final</a>
+            <a href="#section-3">Total</a>
+            <a href="#section-4">Top 5</a>
+            <a href="/contacto.html">Contacto</a>
+          </nav>
+        </div>
+      </header>
+      <article>
+        <!-- Etiqueda "article", usado para auto-contener la información en seciones mas descriptivas -->
+        <header class="post-header">
+          <!-- 
+          Etiquetas "h1" a "h6", son usadas para titulos mientras mas bajo del h1  mas pequeña sera, 
+          La mas importante es h1 y se recomienda tener una por pagina. 
+          El atributo "id" en este caso se usa para enlacer con los enlaces del nav -->
+          <h2>Cuánto dinero mueve el negocio del fútbol</h2>
+          <div class="seccion-autor">
+            <img
+              src="img/autor.jpeg"
+              alt="Foto del autor Manuel El Eysami"
+              title="Manuel El Eysami"
+              height="50"
+              width="50"
+              style="border-radius: 50%"
+            />
+            <p id="autor" class="autor">
+              Publicado por <strong>Manuel El Eysami</strong> 06/10/2021 a las
+              02:10 PM
+            </p>
+          </div>
+          <!-- 
+          Etiqueta "img", se usa para insetar imagenes en la web.
+          El atributo src especifica el nombre de archivo de la imagen.
+          el atributo alt es un texto en caso no se muestre y title es un titulo al posicionar 
+          el cursor sobre la misma
+         -->
+          <div class="center">
+            <a
+              class="boton-agregar"
+              onclick="mostrarImagenPost('./img/post.jpg',  500,  200,  'Imagen de Cristiano Ronaldo y Lionel Messi.');"
+              >Agregar imagen de portada</a
+            >
+          </div>
+          <div id="img-portada"></div>
+          <button id="compartir" onclick="window.location.href='https://www.facebook.com/sharer/sharer.php?u=example.org'">
+              Compartir
+          </button>
+        </header>
+        <!-- 
+        Etiqueta "p", es usada para insertar bloques  de texto, representar un parrafo.
+        Etiqueta "em", es usada  para marcar con énfasis las partes importantes de un texto
+      -->
+        <p>
+          La revista Forbes publicó el 21 de septiembre de 2021 la lista de los
+          10 jugadores de fútbol mejor pagados del mundo. Para compilar la
+          lista.<em> Forbes</em> habló con clubes, agentes de jugadores,
+          patrocinadores comerciales y expertos en fútbol de todo el mundo.
+          Todas las cifras son en dólares estadounidenses e incluyen salarios
+          (antes de impuestos) para la temporada 2021-22, bonificaciones y
+          endosos. Se excluyen las tarifas de transferencia.
+        </p>
+        <p>
+          En este post te contaremos el dinero que suele ganar los deportista
+          del fútbol en el año 2021. <br />
+          Teniendo en cuenta que muchos de estos datos pueden que varian a
+          medida que pase el tiempo o las cifras fueron alteradas por las
+          empresas de patrocinio. Puedes obtener más detalles en la web oficial
+          de
+          <strong>
+            <em>
+              <u>
+                <a
+                  target="_blank"
+                  href="https://www.chicagotribune.com/espanol/deportes/sns-es-futgbolistas-mejor-pagados-20210921-nntg4slwynex5kw62e6tbgfn74-photogallery.html"
+                >
+                  Forbes.
+                </a>
+              </u>
+            </em>
+          </strong>
+        </p>
+        <h3 id="section-1"></h3>
+        <!-- 
+        Etiqueta "strong", representa enfasis en un texto y lo marca como negrita.
+        se diferencia de la etiqueta "em" por la importacion semanticamente
+        el orden seria el siguiente
+        1. strong
+        2. b
+        3. em
+      -->
+      <div class="center">
+        <a
+        class="boton-agregar boton-secundario"
+        id="boton-contenido-1"
+        >Ocultar seccion Uno</a
+      >
+      </div>
+        <div id="contenido-1"> 
+          <p>
+            La Liga de fútbol profesional en España está cerca de que
+            <strong>suponga el 1% del Producto Interior Bruto (PIB)</strong>.
+            Hasta el año pasado,
+            <strong>el fútbol representaba el 0,75% del PIB español</strong>, pero
+            los nuevos contratos de televisión y las previsiones de aportación a
+            la economía, hacen presagiar que ese porcentaje ascienda al 1%. La que
+            es considerada como la mejor liga del mundo es la española, y los
+            grandes jugadores y entrenadores quieren trabajar aquí. El fútbol
+            mueve mucho dinero en nuestro país; unos 7.600 millones de euros.
+          </p>
+          <p>
+            El gasto directo de aficionados y empresas, que es de 3.600 millones
+            de euros al año, según expone palco23. En esta partida se incluyen,
+            además de los <b>1.900 millones de euros que ingresaron </b> los
+            clubes con entradas y abonos, el gasto de los aficionados en productos
+            y servicios asociados al fútbol y al equipo, como la venta de
+            camisetas y merchandising, consumo en restauración o recaudación
+            publicitaria de las marcas en los estadios, camisetas de los
+            jugadores, etc.
+          </p>
+          <p>El aumento del dinero por parte del fútbol proviene de:</p>
+          <!-- 
+          Etiqueta "ol", ol permite definir listas ordenadas.
+          Etiqueta "li", representa un elemento de lista dentro de una lista ordenada o desordernada 
+        -->
+          <ol>
+            <li>Bares y restaurantes</li>
+            <li>Patrocinadores de la UEFA</li>
+            <li>Las televisiones</li>
+          </ol>
+          <p>Otras areas menos frecuentes y que han sido beneficiadas:</p>
+          <!-- 
+          Etiqueta "ul", crea una lista no ordenada,
+          tambien se puede anidar listar ordenadas/desordenadas 
+        -->
+          <ul>
+            <li>Sponsors de los propios equipos</li>
+            <li>Compañías aéreas</li>
+            <li>La casas de apuestas</li>
+            <li>Merchandising:</li>
+            <ol>
+              <li>Venta de franelas</li>
+              <li>Venta de videojuegos</li>
+              <li>Venta de juguetes</li>
+            </ol>
+          </ul>
+          <p>
+            Puedes obtener más detalles en la web oficial de la
+            <!-- Etiqueta "a", crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página -->
+            <a
+              href="https://www.fintonic.com/blog/sabes-cuanto-dinero-mueve-la-champions/"
+              target="_blank"
+              >Fintonic</a
+            >.
+          </p>
+        </div>
+        
+        <h3 id="section-2"></h3>
+        <div class="center">
+          <a
+          class="boton-agregar boton-secundario"
+          id="boton-contenido-2"
+          >Ocultar seccion Dos</a
+        >
+        </div>
+       <div id="contenido-2">
+        <p>
+          Este evento mueve muchísimo dinero. Entradas, billetes de avión,
+          hoteles, transporte, bares y restaurantes, muchos negocios se verán
+          beneficiados. Y no solo los que se ubiquen en Milán, ciudad que acoge
+          la final, sino que va más allá. Desde que los equipos acceden a la
+          fase de grupos, reciben un total de 15.2 millones de euros. Por cada
+          victoria en fase de grupos, acumulan 2.7 millones de euros, mientras
+        </p>
+        <ul>
+          <li>Octavos de final: 9.5 millones de euros.</li>
+          <li>Cuartos de final: 10.5 millones de euros.</li>
+          <li>Semifinales: 12 millones de euros.</li>
+          <li>Final: 15 millones de euros.</li>
+          <li>Campeón: 19 millones de euros.</li>
+          <li>Eso sin contar dinero por patrocinio</li>
+        </ul>
+       </div>
+       <h3 id="section-3"></h3>
+       <div class="center">
+        <a
+        class="boton-agregar boton-secundario"
+        id="boton-contenido-3"
+        >Ocultar seccion Tres</a
+      >
+       <div id="contenido-3">
+         
+        <p>
+          Ya hemos visto que al nivel europeo, el fútbol genera aproximadamente
+          28.400 millones de euros. Está claro que Europa es el principal
+          mercado futbolístico del mundo, pero aun así no hay que olvidar otros
+          países. Por poner un ejemplo, los equipos de la liga brasileña sumaban
+          casi unos 1.300 millones de euros en ingresos, según un estudio del
+          banco Itaú BBA. Y también habría que sumar las ligas argentinas o
+          mexicanas, así como las que muchos otros países.
+        </p>
+        <p>
+          No olvidemos las ligas asiáticas o de oriente medio, que atraen a
+          jugadores veteranos a golpe de talonario. Sumando todo, no sería
+          sorprendente que el total del dinero que mueve el fútbol al nivel
+          mundial se acercara a los 40.000 millones de euros. Y la tendencia
+          sigue al alza. Cada vez se paga más por los derechos de retransmisión
+          de las principales ligas o de los eventos como el Mundial, la Eurocopa
+          o la Copa América.
+        </p>
+       </div>
+        <!-- Etiqueta "section", representa una sección genérica de un documento es usada para separar secciones -->
+        <section>
+          <h3 id="section-4"></h3>
+          <!-- 
+          Etiqueta "table",   representa una tabla en HTML
+          Etiqueta "tr", define una fila de celdas en una tabla
+          Etiqueta "th", define una celda como encabezado de un grupo de celdas 
+          Etiqueta "td", define a una celda de datos de una tabla
+         -->
+         <div class="center">
+           <a
+             class="boton-agregar"
+             id="obtener-tabla"
+             >Mostrar tabla</a
+           >
+           <a
+             class="none-boton"
+             id="toggle-tabla"
+             >Ocultar tabla</a
+           >
+         </div>
+          <div id="tabla">
+            <table border="1" cellpadding="10" cellspacing="0">
+              <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th colspan="2">Salario / Patrocinadores</th>
+                <th>Total</th>
+                <th>Equipo</th>
+              </tr>
+              <span id="datos-tabla"></span>
+            </table>
+          </div>
+        </section>
+        <div class="recomendacion-contenedor">
+          <h5>Vídeo de recomendación</h5>
+        </div>
+        <!-- 
+        Etiqueta "iframe", 
+        representa un contexto de navegación anidado, el cual permite incrustrar otra página HTML 
+        en la página actua 
+      -->
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8jF6R09AxBI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <!-- 
+        Etiqueta "br", produce un salto de línea en el texto
+        Etiqueta "hr", representa un cambio de tema o separador
+      -->
+        <br />
+        <hr />
+        <p class="despedida">
+          Gracias por leer este post. ¡Saludos y hasta la próxima!
+        </p>
+      </article>
+      <!-- 
+      Etiquetda "aside", 
+      representa una sección de una página que consiste en contenido que está indirectamente relacionado
+      con el contenido principal  
+    -->
+      <aside>
+        <h4>Articulos que te pueden interesar</h4>
+        <div class="center">
+          <a class="boton-agregar" id="obtener-articulos"
+            >Obtener articulos relacionados</a
+          >
+        </div>
+        <br />
+        <ul class="recomendados" id="ul-articulos"></ul>
+      </aside>
+      <!-- 
+      Etiqueta "footer", representa al pie de una sección o documento.
+     "&copy;", es un caracter especiale de HTML, reprenta el simbolo "©".
+    --></div>
+    <footer id="copyright">
+      Todos los derechos reservados &copy; <span id="fecha"></span> Sport Media.
+    </footer>
+  </body>
+  <!-- Etiqueta "script", permite insertar codigo de Javascript o enlacer archivos del mismo al documento -->
+  <script src="js/main.js" type="module"></script>
+  <script>
+    // esta se ejecuta cuando se preciona el boton de agregar imagen de portada,
+    // cuando es ejecutado, buscar por el post-img en caso exista muestra alerta de error indicando que la imagen ya se encuentra en el html
+    // Caso contrario creata un img usando createElement
+    // Setea los parametros de src, width, height, alt y agregado la clase
+    // Estos parametros los recibe de la funcion ya que se lo envian como parametro
+    // luego lo agreaga como hij en el selector img-portada
+    function mostrarImagenPost(src, width, height, alt) {
+      const imgPost = document.querySelector('.post-img');
+      if (imgPost) {
+        return swal('Ya la imagen del post se encuentra agregada', {
+          icon: 'warning',
+          title: 'Portada duplicada',
+          button: false,
+        });
+      }
+      const img = document.createElement('img');
+      img.src = src;
+      img.width = width;
+      img.height = height;
+      img.alt = alt;
+      img.classList.add('post-img');
+      document.querySelector('#img-portada').appendChild(img);
+    }
+  </script>
+</html>

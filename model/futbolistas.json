@@ -1,0 +1,49 @@
+{
+  "futbolistas": [
+    {
+      "nombre": "Cristiano Ronaldo",
+      "edad": 36 ,
+      "ganancia": {
+        "salario": 70,
+        "patrocinadores": 55
+      },
+      "equipo": "Manchester United"
+    },
+    {
+      "nombre": "Lionel Messi",
+      "edad": 34 ,
+      "ganancia": {
+        "salario": 75,
+        "patrocinadores": 35
+      },
+      "equipo": "Paris-Saint Germain"
+    },
+    {
+      "nombre": "Neymar JR",
+      "edad": 29 ,
+      "ganancia": {
+        "salario": 75,
+        "patrocinadores": 20
+      },
+      "equipo": "Paris-Saint Germain"
+    },
+    {
+      "nombre": "Kylian Mbappé",
+      "edad": 22 ,
+      "ganancia": {
+        "salario": 28,
+        "patrocinadores": 15
+      },
+      "equipo": "Paris-Saint Germain"
+    },
+    {
+      "nombre": "Mohamed Salah",
+      "edad": 29 ,
+      "ganancia": {
+        "salario": 25,
+        "patrocinadores": 16
+      },
+      "equipo": "Paris-Saint Germain"
+    }
+  ]
+}

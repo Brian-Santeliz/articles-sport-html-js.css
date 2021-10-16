@@ -1,0 +1,22 @@
+{
+  "articulos": [
+    {
+      "titulo": "El Newcastle es el nuevo rico de la Premier",
+      "autor": "Diego García",
+      "img": "post-1.webp",
+      "alt": "Imagen del nuevo presidente del equipo Newcastle"
+    },
+    {
+      "titulo": "Di María, Mancini y Vialli, entre los involucrados en Papeles de Pandora",
+      "autor": "Fernando Azuaje",
+      "img": "post-2.webp",
+      "alt": "Mancini, Vialli y Di María."
+    },
+    {
+      "titulo": "Koeman: 'Como entrenador pierdes y casi nunca ganas'",
+      "autor": "Pablo Luque",
+      "img": "post-3.jpeg",
+      "alt": "Entrenador del FC Barcelona en rueda de prensa."
+    }
+  ]
+}

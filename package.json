@@ -1,0 +1,19 @@
+{
+  "name": "js-interacion-web",
+  "version": "1.0.0",
+  "description": "Sport Media is a web controller by javascript and html & css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Html",
+    "CSS",
+    "javascript"
+  ],
+  "author": "Brian Santeliz",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
